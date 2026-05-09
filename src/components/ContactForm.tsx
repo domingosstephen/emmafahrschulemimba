@@ -45,7 +45,7 @@ export default function ContactForm() {
     }
   };
 
-  const whatsappNumber = "+491632915446";
+  const whatsappNumber = "+4915775914150";
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 
   return (

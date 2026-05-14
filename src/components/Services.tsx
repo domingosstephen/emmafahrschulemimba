@@ -16,7 +16,7 @@ const services = [
       "Schnelle Bearbeitung",
       "Vollständig diskret",
     ],
-    accent: "from-amber-500 to-amber-400",
+    accent: "from-emerald-500 to-emerald-400",
     iconPath:
       "M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z",
   },
@@ -31,7 +31,7 @@ const services = [
       "Rechtliche Unterstützung",
       "Schnelle Wiederherstellung",
     ],
-    accent: "from-blue-500 to-blue-400",
+    accent: "from-teal-500 to-teal-400",
     iconPath:
       "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
   },
@@ -46,7 +46,7 @@ const services = [
       "Regelmäßige Updates",
       "Garantierte Fristen",
     ],
-    accent: "from-emerald-500 to-emerald-400",
+    accent: "from-cyan-600 to-cyan-500",
     iconPath:
       "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z",
   },

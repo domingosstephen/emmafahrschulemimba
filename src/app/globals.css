@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #faf8f5;
-  --foreground: #0a1628;
+  --background: #f5f7f6;
+  --foreground: #121615;
 }
 
 * {
@@ -29,22 +29,22 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a1628;
+  background: #121615;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d4a853;
+  background: #10b981;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #c4952a;
+  background: #059669;
 }
 
 /* Text selection */
 ::selection {
-  background: #d4a853;
-  color: #0a1628;
+  background: #10b981;
+  color: #121615;
 }
 
 /* Smooth image loading */
@@ -73,7 +73,7 @@ img {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #d4a853 0%, #f6c547 50%, #d4a853 100%);
+  background: linear-gradient(135deg, #10b981 0%, #34d399 50%, #10b981 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -82,7 +82,7 @@ img {
 /* Horizontal rule style */
 .divider-gold {
   height: 1px;
-  background: linear-gradient(90deg, transparent, #d4a853, transparent);
+  background: linear-gradient(90deg, transparent, #10b981, transparent);
 }
 
 /* Card hover lift */
@@ -93,7 +93,7 @@ img {
 
 .card-lift:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 60px rgba(10, 22, 40, 0.15);
+  box-shadow: 0 20px 60px rgba(18, 22, 21, 0.15);
 }
 
 /* Stagger children animation */

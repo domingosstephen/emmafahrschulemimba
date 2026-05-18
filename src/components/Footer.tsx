@@ -114,7 +114,7 @@ export default function Footer() {
               &copy; {currentYear} FahrSchule Direkt. Alle Rechte vorbehalten.
             </p>
             <p className="text-navy-600 text-xs">
-              Musterstraße 123, 10115 Berlin, Deutschland
+              Langemarckstraße 189, 28199 Bremen, Deutschland
             </p>
           </div>
         </div>

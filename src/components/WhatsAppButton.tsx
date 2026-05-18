@@ -7,7 +7,7 @@ export default function WhatsAppButton() {
   const [showTooltip, setShowTooltip] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
 
-  const whatsappNumber = "+4915775914150";
+  const whatsappNumber = "+4917689753003";
   const message = encodeURIComponent(
     "Hallo! Ich hätte gerne Informationen zu Ihren Führerschein-Services."
   );

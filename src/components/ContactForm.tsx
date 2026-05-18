@@ -46,7 +46,10 @@ export default function ContactForm() {
   };
 
   const whatsappNumber = "+4917689753003";
-  const whatsappUrl = `https://wa.me/${whatsappNumber}`;
+  const message = encodeURIComponent(
+    "Hallo! 👋 Ich interessiere mich für Ihre Führerschein-Services. Könnten Sie mir bitte mehr Informationen geben?"
+  );
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
   return (
     <section id="kontakt" className="relative py-32 bg-cream overflow-hidden">

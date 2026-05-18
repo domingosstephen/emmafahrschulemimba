@@ -9,7 +9,7 @@ export default function WhatsAppButton() {
 
   const whatsappNumber = "+4917689753003";
   const message = encodeURIComponent(
-    "Hallo! Ich hätte gerne Informationen zu Ihren Führerschein-Services."
+    "Hallo! 👋 Ich interessiere mich für Ihre Führerschein-Services. Könnten Sie mir bitte mehr Informationen geben?"
   );
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 

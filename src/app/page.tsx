@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
+import Gallery from "@/components/Gallery";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const servicePreview = [
@@ -8,6 +10,7 @@ const servicePreview = [
     description:
       "Erhalte deinen Führerschein schnell und unkompliziert — ohne Fahrprüfung.",
     accent: "from-emerald-500 to-emerald-400",
+    image: "/images/fuehrerschein-1.jpg",
     iconPath:
       "M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z",
   },
@@ -16,6 +19,7 @@ const servicePreview = [
     description:
       "Führerschein gesperrt oder entzogen? Wir holen ihn für dich zurück.",
     accent: "from-teal-500 to-teal-400",
+    image: "/images/fuehrerschein-5.jpg",
     iconPath:
       "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
   },
@@ -24,6 +28,7 @@ const servicePreview = [
     description:
       "Dringend? Unser Express-Service garantiert schnellstmögliche Bearbeitung.",
     accent: "from-cyan-600 to-cyan-500",
+    image: "/images/fuehrerschein-6.jpg",
     iconPath:
       "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z",
   },
@@ -64,9 +69,17 @@ export default function Home() {
                   href="/leistungen"
                   className="group block bg-white rounded-3xl overflow-hidden card-lift border border-navy-100/50 h-full"
                 >
-                  <div className={`h-2 bg-gradient-to-r ${service.accent}`} />
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${service.accent}`} />
+                  </div>
                   <div className="p-8">
-                    <div className="w-14 h-14 rounded-2xl bg-navy-950 flex items-center justify-center mb-6 group-hover:bg-amber-500 transition-colors duration-300">
+                    <div className="w-14 h-14 rounded-2xl bg-navy-950 flex items-center justify-center mb-6 group-hover:bg-amber-500 transition-colors duration-300 -mt-14 relative z-10 shadow-lg">
                       <svg
                         className="w-7 h-7 text-white"
                         fill="none"
@@ -98,6 +111,7 @@ export default function Home() {
       </section>
 
       <Stats />
+      <Gallery />
 
       {/* CTA Section */}
       <section className="relative py-32 bg-navy-950 overflow-hidden">

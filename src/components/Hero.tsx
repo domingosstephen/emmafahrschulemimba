@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const words = ["Erhalte", "Sichere", "Erneuere"];
 
@@ -17,11 +18,22 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-navy-950">
+      {/* Hero Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/hero.jpg"
+          alt="Emma Fahrschule Mimba"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-navy-950/75" />
+      </div>
+
       {/* Ambient gradient orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-amber-500/10 rounded-full blur-[120px] animate-pulse-slow" />
         <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-amber-500/5 rounded-full blur-[120px] animate-pulse-slow" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-navy-800/50 rounded-full blur-[100px]" />
       </div>
 
       {/* Grid pattern overlay */}

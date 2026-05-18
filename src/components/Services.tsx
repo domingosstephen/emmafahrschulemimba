@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
 
 const services = [
@@ -17,6 +18,7 @@ const services = [
       "Vollständig diskret",
     ],
     accent: "from-emerald-500 to-emerald-400",
+    image: "/images/fuehrerschein-1.jpg",
     iconPath:
       "M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z",
   },
@@ -32,6 +34,7 @@ const services = [
       "Schnelle Wiederherstellung",
     ],
     accent: "from-teal-500 to-teal-400",
+    image: "/images/fuehrerschein-5.jpg",
     iconPath:
       "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z",
   },
@@ -47,6 +50,7 @@ const services = [
       "Garantierte Fristen",
     ],
     accent: "from-cyan-600 to-cyan-500",
+    image: "/images/fuehrerschein-6.jpg",
     iconPath:
       "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z",
   },
@@ -112,7 +116,17 @@ function ServiceCard({
           </span>
         </div>
 
-        <div className="md:col-span-7 p-8 md:p-12">
+        <div className="md:col-span-4 relative h-48 md:h-auto overflow-hidden">
+          <Image
+            src={service.image}
+            alt={service.title}
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/10" />
+        </div>
+
+        <div className="md:col-span-4 p-8 md:p-10">
           <div className="flex items-start gap-4 mb-4">
             <svg
               className="w-8 h-8 text-navy-950 flex-shrink-0 mt-1"
@@ -132,7 +146,7 @@ function ServiceCard({
           </p>
         </div>
 
-        <div className="md:col-span-4 bg-navy-50/50 p-8 md:p-12 flex items-center">
+        <div className="md:col-span-3 bg-navy-50/50 p-8 md:p-10 flex items-center">
           <ul className="space-y-3 w-full">
             {service.features.map((feature) => (
               <li key={feature} className="flex items-center gap-3 text-navy-700">

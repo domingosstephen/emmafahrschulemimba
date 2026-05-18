@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
 
 const values = [
@@ -45,27 +46,14 @@ export default function About() {
           {/* Left - Visual */}
           <ScrollReveal direction="left">
             <div className="relative">
-              {/* Abstract visual placeholder */}
-              <div className="aspect-square rounded-3xl bg-navy-950 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-transparent" />
-                <div className="absolute bottom-0 right-0 w-3/4 h-3/4 bg-gradient-to-tl from-amber-500/10 to-transparent rounded-tl-[100px]" />
-
-                <div
-                  className="absolute inset-0 opacity-10"
-                  style={{
-                    backgroundImage: `linear-gradient(rgba(16, 185, 129, 0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(16, 185, 129, 0.5) 1px, transparent 1px)`,
-                    backgroundSize: "40px 40px",
-                  }}
+              <div className="aspect-square rounded-3xl relative overflow-hidden">
+                <Image
+                  src="/images/success-2.jpg"
+                  alt="Zufriedene Kundinnen mit ihrem neuen Führerschein"
+                  fill
+                  className="object-cover rounded-3xl"
                 />
-
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-8xl font-bold gradient-text">10+</div>
-                    <div className="text-navy-300 text-lg mt-2 uppercase tracking-widest">
-                      Jahre Erfahrung
-                    </div>
-                  </div>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-950/40 to-transparent rounded-3xl" />
 
                 <div className="absolute top-6 right-6 bg-amber-500 text-navy-950 text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-full">
                   Seit 2014

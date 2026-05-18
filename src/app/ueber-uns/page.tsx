@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import About from "@/components/About";
+import Gallery from "@/components/Gallery";
 import Testimonials from "@/components/Testimonials";
 import PageHeader from "@/components/PageHeader";
 
@@ -19,6 +20,7 @@ export default function UeberUnsPage() {
         description="Professionell, diskret und ergebnisorientiert — das ist FahrSchule Direkt."
       />
       <About />
+      <Gallery />
       <Testimonials />
     </main>
   );

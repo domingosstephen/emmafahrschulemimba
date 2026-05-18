@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="/images/hero.jpg"
-          alt="Emma Fahrschule Mimba"
+          alt="Fahrschule Volante"
           fill
           className="object-cover"
           priority

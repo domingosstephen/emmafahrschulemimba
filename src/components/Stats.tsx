@@ -47,7 +47,7 @@ export default function Stats() {
                 key={i}
                 className="text-8xl md:text-[10rem] font-bold text-navy-950/[0.03] mx-8 select-none"
               >
-                FAHRSCHULE DIREKT
+                FAHRSCHULE VOLANTE
               </span>
             ))}
           </div>

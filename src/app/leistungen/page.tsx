@@ -3,7 +3,7 @@ import Services from "@/components/Services";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Leistungen | FahrSchule Direkt",
+  title: "Leistungen | Fahrschule Volante",
   description:
     "Führerschein ohne Prüfung, Wiederherstellung nach Sperre und Express-Service. Alle Leistungen im Überblick.",
 };

@@ -36,11 +36,8 @@ export default function Navbar() {
           {/* Logo */}
           <a href="/" className="relative z-10 group">
             <span className="text-2xl font-bold tracking-tight text-white">
-              Fahr
-              <span className="gradient-text">Schule</span>
-            </span>
-            <span className="block text-[10px] uppercase tracking-[0.3em] text-navy-400 group-hover:text-amber-500 transition-colors">
-              Direkt
+              Fahrschule
+              <span className="gradient-text"> Volante</span>
             </span>
           </a>
 

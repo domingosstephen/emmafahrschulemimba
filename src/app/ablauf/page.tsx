@@ -3,7 +3,7 @@ import HowItWorks from "@/components/HowItWorks";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "So funktioniert's | FahrSchule Direkt",
+  title: "So funktioniert's | Fahrschule Volante",
   description:
     "Vier einfache Schritte zu deinem Führerschein. Erfahre, wie unser Prozess funktioniert.",
 };

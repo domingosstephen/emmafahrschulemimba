@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "FahrSchule Direkt | Führerschein ohne Prüfung & Wiederherstellung",
+  title: "Fahrschule Volante | Führerschein ohne Prüfung & Wiederherstellung",
   description:
     "Führerschein ohne Prüfung erhalten oder gesperrten Führerschein zurückbekommen. Schnell, diskret und zuverlässig. Ihr Partner in ganz Deutschland.",
   keywords: [
@@ -25,11 +25,11 @@ export const metadata: Metadata = {
     "Führerschein kaufen",
     "Führerschein Wiederherstellung",
     "gesperrter Führerschein",
-    "Fahrschule Deutschland",
+    "Fahrschule Volante",
     "Führerschein zurückbekommen",
   ],
   openGraph: {
-    title: "FahrSchule Direkt | Ihr Führerschein, unser Auftrag",
+    title: "Fahrschule Volante | Ihr Führerschein, unser Auftrag",
     description:
       "Führerschein ohne Prüfung oder Wiederherstellung nach Sperre. Professionell und diskret in ganz Deutschland.",
     type: "website",

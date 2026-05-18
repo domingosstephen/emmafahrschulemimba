@@ -9,7 +9,7 @@ const testimonials = [
     name: "Thomas K.",
     location: "Berlin",
     service: "Führerschein ohne Prüfung",
-    text: "Ich hatte nie die Zeit für die Fahrprüfung. FahrSchule Direkt hat alles für mich geregelt — schnell, diskret und professionell. Absolut empfehlenswert.",
+    text: "Ich hatte nie die Zeit für die Fahrprüfung. Fahrschule Volante hat alles für mich geregelt — schnell, diskret und professionell. Absolut empfehlenswert.",
     rating: 5,
   },
   {

@@ -80,7 +80,7 @@ export default function About() {
                 <span className="gradient-text">Mission.</span>
               </h2>
               <p className="mt-6 text-navy-600 text-lg leading-relaxed">
-                FahrSchule Direkt ist dein Partner, wenn es um den Führerschein
+                Fahrschule Volante ist dein Partner, wenn es um den Führerschein
                 geht — egal ob du einen neuen brauchst oder deinen gesperrten
                 zurückholen willst. Diskret, professionell und auf dein Ergebnis
                 fokussiert.

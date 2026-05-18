@@ -3,7 +3,7 @@ import ContactForm from "@/components/ContactForm";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Kontakt | FahrSchule Direkt",
+  title: "Kontakt | Fahrschule Volante",
   description:
     "Kontaktiere uns für eine kostenlose Beratung. Per Formular oder WhatsApp — wir sind für dich da.",
 };

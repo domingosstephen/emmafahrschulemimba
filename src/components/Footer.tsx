@@ -58,14 +58,11 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <a href="/" className="inline-block group">
               <span className="text-2xl font-bold text-white">
-                Fahr<span className="gradient-text">Schule</span>
-              </span>
-              <span className="block text-[10px] uppercase tracking-[0.3em] text-navy-400">
-                Direkt
+                Fahrschule<span className="gradient-text"> Volante</span>
               </span>
             </a>
             <p className="mt-4 text-navy-400 leading-relaxed max-w-sm">
-              Dein Partner für Führerschein ohne Prüfung und
+              Fahrschule Volante — dein Partner für Führerschein ohne Prüfung und
               Führerschein-Wiederherstellung. Diskret und professionell in ganz
               Deutschland.
             </p>
@@ -111,7 +108,7 @@ export default function Footer() {
         <div className="border-t border-navy-800 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-navy-500 text-sm">
-              &copy; {currentYear} FahrSchule Direkt. Alle Rechte vorbehalten.
+              &copy; {currentYear} Fahrschule Volante. Alle Rechte vorbehalten.
             </p>
             <p className="text-navy-600 text-xs">
               Langemarckstraße 189, 28199 Bremen, Deutschland
